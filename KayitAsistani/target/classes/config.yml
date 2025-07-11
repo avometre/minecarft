@@ -1,0 +1,7 @@
+# Giriş işlemleriyle ilgili ayarlar
+# engellemeSuresi: Hatalı giriş limiti aşıldığında oyuncunun kaç saniye engelleneceği
+# maksimumDeneme: Bir oyuncunun arka arkaya kaç kez yanlış şifre girebileceği
+
+giris:
+  engellemeSuresi: 60 # saniye cinsinden
+  maksimumDeneme: 5 

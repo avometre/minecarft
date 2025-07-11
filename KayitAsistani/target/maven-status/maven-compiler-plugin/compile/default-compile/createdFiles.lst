@@ -1,0 +1,8 @@
+com\kayitasistani\KullaniciRepository.class
+com\kayitasistani\KayitKomutu.class
+com\kayitasistani\GirisKomutu.class
+com\kayitasistani\Kullanici.class
+com\kayitasistani\SifremiDegistirKomutu.class
+com\kayitasistani\KayitAsistani.class
+com\kayitasistani\MongoDBManager.class
+com\kayitasistani\ProfilKomutu.class
