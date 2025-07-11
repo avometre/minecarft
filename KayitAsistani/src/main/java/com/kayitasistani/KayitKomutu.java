@@ -35,11 +35,9 @@ public class KayitKomutu implements CommandExecutor {
         String sifre = args[0];
         UUID uuid = oyuncu.getUniqueId();
         String kullaniciAdi = oyuncu.getName();
-        String ip = "";
+        String ip = null;
         if (oyuncu.getAddress() != null && oyuncu.getAddress().getAddress() != null) {
             ip = oyuncu.getAddress().getAddress().getHostAddress();
-        } else {
-            ip = "bilinmiyor";
         }
 
         final String sifreFinal = sifre;
@@ -50,6 +48,10 @@ public class KayitKomutu implements CommandExecutor {
             try {
                 if (kullaniciRepo.kullaniciVarMi(uuidFinal)) {
                     oyuncu.sendActionBar(Component.text("Zaten kayıtlısınız!").color(NamedTextColor.RED).decorate(TextDecoration.BOLD));
+                    return;
+                }
+                if (kullaniciRepo.kullaniciGetirKullaniciAdi(kullaniciAdiFinal) != null) {
+                    oyuncu.sendActionBar(Component.text("Bu kullanıcı adı zaten alınmış!").color(NamedTextColor.RED).decorate(TextDecoration.BOLD));
                     return;
                 }
                 String hash = BCrypt.hashpw(sifreFinal, BCrypt.gensalt());

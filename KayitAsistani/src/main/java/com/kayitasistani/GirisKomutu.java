@@ -62,9 +62,9 @@ public class GirisKomutu implements CommandExecutor {
         }
 
         Bukkit.getScheduler().runTaskAsynchronously(plugin, () -> {
-            if (!oyuncu.isOnline()) return;
             try {
                 Kullanici kullanici = kullaniciRepo.kullaniciGetir(uuidFinal);
+                if (!oyuncu.isOnline()) return;
                 if (kullanici == null || kullanici.getSifreHash() == null) {
                     sendActionBar(oyuncu, "Hesabınız bulunamadı. Lütfen önce /kayıt ile kayıt olun.", NamedTextColor.RED);
                     return;
@@ -83,29 +83,29 @@ public class GirisKomutu implements CommandExecutor {
                         plugin.getLogger().info(oyuncu.getName() + " (" + uuidFinal + ") kullanıcısı giriş yaptı. IP: " + (girisIp != null ? girisIp : "bilinmiyor"));
                     } catch (Exception ex) {
                         plugin.getLogger().severe("Kullanıcı güncellenirken hata: " + ex.getMessage());
-                        sendActionBar(oyuncu, "Giriş kaydı güncellenemedi! Lütfen tekrar deneyin.", NamedTextColor.RED);
+                        if (oyuncu.isOnline()) sendActionBar(oyuncu, "Giriş kaydı güncellenemedi! Lütfen tekrar deneyin.", NamedTextColor.RED);
                         return;
                     }
                     // Başarılı girişte sayaç ve engel sıfırlanır
                     denemeSayilari.remove(uuidFinal);
                     engelBitisZamanlari.remove(uuidFinal);
-                    sendActionBar(oyuncu, "Başarıyla giriş yaptınız!", NamedTextColor.GREEN);
+                    if (oyuncu.isOnline()) sendActionBar(oyuncu, "Başarıyla giriş yaptınız!", NamedTextColor.GREEN);
                 } else {
                     // Başarısız giriş
                     int deneme = denemeSayilari.getOrDefault(uuidFinal, 0) + 1;
                     if (deneme >= maksimumDeneme) {
                         engelBitisZamanlari.put(uuidFinal, System.currentTimeMillis() + engellemeSuresiMs);
                         denemeSayilari.remove(uuidFinal);
-                        sendActionBar(oyuncu, "Çok fazla hatalı giriş! " + (engellemeSuresiMs/1000) + " saniye boyunca giriş yapamazsınız.", NamedTextColor.RED);
+                        if (oyuncu.isOnline()) sendActionBar(oyuncu, "Çok fazla hatalı giriş! " + (engellemeSuresiMs/1000) + " saniye boyunca giriş yapamazsınız.", NamedTextColor.RED);
                     } else {
                         denemeSayilari.put(uuidFinal, deneme);
                         int kalanHak = maksimumDeneme - deneme;
-                        sendActionBar(oyuncu, "Şifre yanlış! (" + deneme + "/" + maksimumDeneme + ") - Kalan deneme: " + kalanHak, NamedTextColor.RED);
+                        if (oyuncu.isOnline()) sendActionBar(oyuncu, "Şifre yanlış! (" + deneme + "/" + maksimumDeneme + ") - Kalan deneme: " + kalanHak, NamedTextColor.RED);
                     }
                 }
             } catch (Exception e) {
                 plugin.getLogger().severe("/giriş komutunda hata: " + e.getMessage());
-                sendActionBar(oyuncu, "Bir hata oluştu, lütfen tekrar deneyin.", NamedTextColor.RED);
+                if (oyuncu.isOnline()) sendActionBar(oyuncu, "Bir hata oluştu, lütfen tekrar deneyin.", NamedTextColor.RED);
             }
         });
         return true;

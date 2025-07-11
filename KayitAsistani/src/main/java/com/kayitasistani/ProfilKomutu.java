@@ -10,6 +10,8 @@ import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 import java.util.UUID;
 import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
+import java.time.ZoneId;
 
 public class ProfilKomutu implements CommandExecutor {
     private final KullaniciRepository kullaniciRepo;
@@ -35,10 +37,10 @@ public class ProfilKomutu implements CommandExecutor {
                     oyuncu.sendMessage(Component.text("Hesabınız bulunamadı.").color(NamedTextColor.RED).decorate(TextDecoration.BOLD));
                     return;
                 }
-                SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy HH:mm");
-                String kayitTarihi = kullanici.getKayitTarihi() != null ? sdf.format(kullanici.getKayitTarihi()) : "-";
-                String sonGiris = kullanici.getSonGirisTarihi() != null ? sdf.format(kullanici.getSonGirisTarihi()) : "-";
-                String sifreDegistirme = kullanici.getSifreDegistirmeTarihi() != null ? sdf.format(kullanici.getSifreDegistirmeTarihi()) : "-";
+                DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
+                String kayitTarihi = kullanici.getKayitTarihi() != null ? kullanici.getKayitTarihi().toInstant().atZone(ZoneId.systemDefault()).format(dtf) : "-";
+                String sonGiris = kullanici.getSonGirisTarihi() != null ? kullanici.getSonGirisTarihi().toInstant().atZone(ZoneId.systemDefault()).format(dtf) : "-";
+                String sifreDegistirme = kullanici.getSifreDegistirmeTarihi() != null ? kullanici.getSifreDegistirmeTarihi().toInstant().atZone(ZoneId.systemDefault()).format(dtf) : "-";
                 String toplamSure = formatSure(kullanici.getToplamOynamaSuresi());
                 oyuncu.sendMessage(Component.text("--- Profil Bilgileriniz ---").color(NamedTextColor.GOLD).decorate(TextDecoration.BOLD));
                 oyuncu.sendMessage(Component.text("Kullanıcı Adı: ").color(NamedTextColor.YELLOW).append(Component.text(kullanici.getKullaniciAdi()).color(NamedTextColor.WHITE)));
