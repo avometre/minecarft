@@ -19,6 +19,10 @@ commands:
     description: Hesap bilgilerinizi ve istatistiklerinizi gösterir
     usage: /profil
     permission: kayitasistani.profil
+  şifresıfırla:
+    description: Adminler için oyuncu şifresi sıfırlama komutu
+    usage: /şifresıfırla <oyuncu> <yeniŞifre>
+    permission: kayitasistani.sifresifirla
 permissions:
   kayitasistani.kayit:
     description: Kayıt olma izni
@@ -32,3 +36,6 @@ permissions:
   kayitasistani.profil:
     description: Profil görüntüleme izni
     default: true
+  kayitasistani.sifresifirla:
+    description: Şifre sıfırlama komutunu kullanma izni (sadece adminler)
+    default: op

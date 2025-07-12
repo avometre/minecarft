@@ -4,24 +4,28 @@ import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoDatabase;
 import org.bukkit.plugin.Plugin;
+import org.bukkit.configuration.file.FileConfiguration;
 
 public class MongoDBManager {
-    private static final String URI = "mongodb://minecraft:%40merR4141%40%40%21@94.154.34.158:27017/minecraftdb?authSource=minecraftdb";
-    private static final String DB_NAME = "minecraftdb";
     private MongoClient client;
     private MongoDatabase database;
     private final Plugin plugin;
+    private final String uri;
+    private final String dbName;
 
     public MongoDBManager(Plugin plugin) {
         this.plugin = plugin;
+        FileConfiguration config = plugin.getConfig();
+        this.uri = config.getString("mongodb.uri");
+        this.dbName = config.getString("mongodb.database");
     }
 
     public synchronized void connect() {
         int retry = 0;
         while (retry < 3) {
             try {
-                client = MongoClients.create(URI);
-                database = client.getDatabase(DB_NAME);
+                client = MongoClients.create(uri);
+                database = client.getDatabase(dbName);
                 // Test bağlantı
                 database.listCollectionNames().first();
                 plugin.getLogger().info("MongoDB bağlantısı başarılı!");

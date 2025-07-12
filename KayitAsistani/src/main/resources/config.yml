@@ -4,4 +4,11 @@
 
 giris:
   engellemeSuresi: 60 # saniye cinsinden
-  maksimumDeneme: 5 
+  maksimumDeneme: 5
+
+# MongoDB bağlantı ayarları
+# uri: MongoDB bağlantı dizesi. Kullanıcı adı, parola ve sunucu adresini buradan ayarlayabilirsiniz.
+# database: Kullanılacak veritabanı adı.
+mongodb:
+  uri: "mongodb://minecraft:%40merR4141%40%40%21@94.154.34.158:27017/minecraftdb?authSource=minecraftdb" # MongoDB bağlantı dizesi (URI)
+  database: "minecraftdb" # Kullanılacak veritabanı adı 

@@ -36,6 +36,10 @@ public class GirisKomutu implements CommandExecutor {
         oturumAcanlar.remove(uuid);
     }
 
+    public static String hashSifre(String sifre) {
+        return org.mindrot.jbcrypt.BCrypt.hashpw(sifre, org.mindrot.jbcrypt.BCrypt.gensalt());
+    }
+
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!(sender instanceof Player)) {

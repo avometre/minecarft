@@ -1,79 +1,80 @@
-[18:25:33] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[18:25:34] [ServerMain/INFO]: Loaded 7 recipes
-[18:25:34] [Server thread/INFO]: Starting minecraft server version 1.20.1
-[18:25:34] [Server thread/INFO]: Loading properties
-[18:25:34] [Server thread/INFO]: This server is running Paper version git-Paper-196 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 773dd72)
-[18:25:35] [Server thread/INFO]: Using 4 threads for Netty based IO
-[18:25:35] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[18:25:35] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[08:01:08] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[08:01:10] [ServerMain/INFO]: Loaded 7 recipes
+[08:01:10] [Server thread/INFO]: Starting minecraft server version 1.20.1
+[08:01:10] [Server thread/INFO]: Loading properties
+[08:01:10] [Server thread/INFO]: This server is running Paper version git-Paper-196 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 773dd72)
+[08:01:10] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[08:01:10] [Server thread/INFO]: Using 4 threads for Netty based IO
+[08:01:11] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[18:25:35] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
-[18:25:35] [Server thread/INFO]: Default game type: SURVIVAL
-[18:25:35] [Server thread/INFO]: Generating keypair
-[18:25:35] [Server thread/INFO]: Starting Minecraft server on *:25565
-[18:25:35] [Server thread/INFO]: Using default channel type
-[18:25:35] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[18:25:35] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[18:25:35] [Server thread/INFO]: [KayitAsistani] Loading server plugin KayitAsistani v1.0
-[18:25:35] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[18:25:35] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[18:25:35] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[18:25:35] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[18:25:35] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[18:25:35] [Server thread/INFO]: Preparing level "world"
-[18:25:35] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[18:25:36] [Server thread/INFO]: Time elapsed: 241 ms
-[18:25:36] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[18:25:36] [Server thread/INFO]: Time elapsed: 29 ms
-[18:25:36] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[18:25:36] [Server thread/INFO]: Time elapsed: 30 ms
-[18:25:36] [Server thread/INFO]: [KayitAsistani] Enabling KayitAsistani v1.0
-[18:25:36] [Server thread/INFO]: [KayitAsistani] KayitAsistani baþlatýlýyor...
-[18:25:36] [Server thread/INFO]: [org.mongodb.driver.client] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.15+6"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='minecraft', source='minecraftdb', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@29e444a7, com.mongodb.Jep395RecordCodecProvider@43e73272, com.mongodb.KotlinCodecProvider@2ad6b1a8]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[94.154.34.158:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
-[18:25:36] [cluster-ClusterId{value='68712cf0eacb176d2df8b547', description='null'}-94.154.34.158:27017/INFO]: [org.mongodb.driver.cluster] Monitor thread successfully connected to server with description ServerDescription{address=94.154.34.158:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=56131600}
-[18:25:36] [Server thread/INFO]: [org.mongodb.driver.cluster] No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=94.154.34.158:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
-[18:25:36] [Server thread/INFO]: [KayitAsistani] MongoDB baðlantýsý baþarýlý!
-[18:25:37] [Server thread/INFO]: [KayitAsistani] KayitAsistani aktif!
-[18:25:37] [Server thread/INFO]: Running delayed init tasks
-[18:25:37] [Server thread/INFO]: Done (2.323s)! For help, type "help"
-[18:25:37] [Server thread/INFO]: Timings Reset
-[18:25:42] [User Authenticator #0/INFO]: UUID of player Korfez is f11fc57f-daea-3f75-9417-b1d89cd7624a
-[18:25:42] [Server thread/INFO]: Korfez joined the game
-[18:25:42] [Server thread/INFO]: Korfez[/192.168.1.2:61007] logged in with entity id 184 at ([world]309.4854426619026, 79.0, -212.76727171379716)
-[18:25:52] [Server thread/INFO]: Korfez issued server command: /giriþ omerR4141
-[18:25:52] [Craft Scheduler Thread - 3 - KayitAsistani/INFO]: [KayitAsistani] Korfez (f11fc57f-daea-3f75-9417-b1d89cd7624a) kullanýcýsý giriþ yaptý. IP: 192.168.1.2
-[18:25:55] [User Authenticator #0/INFO]: UUID of player Korfez is f11fc57f-daea-3f75-9417-b1d89cd7624a
-[18:25:55] [Server thread/INFO]: Korfez lost connection: You logged in from another location
-[18:25:55] [Server thread/INFO]: Korfez left the game
-[18:25:55] [Server thread/INFO]: Korfez joined the game
-[18:25:55] [Server thread/INFO]: Korfez[/192.168.1.2:61014] logged in with entity id 203 at ([world]309.4854426619026, 79.0, -212.76727171379716)
-[18:33:23] [Server thread/INFO]: Stopping server
-[18:33:23] [Server thread/INFO]: [KayitAsistani] Disabling KayitAsistani v1.0
-[18:33:23] [Server thread/INFO]: [KayitAsistani] KayitAsistani devre dýþý býrakýldý.
-[18:33:23] [Server thread/INFO]: Saving players
-[18:33:23] [Server thread/INFO]: Korfez lost connection: Server closed
-[18:33:23] [Server thread/INFO]: Korfez left the game
-[18:33:24] [Server thread/INFO]: Saving worlds
-[18:33:24] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[18:33:24] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[18:33:24] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[18:33:24] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[18:33:24] [Server thread/INFO]: [ChunkHolderManager] Saved 20 block chunks, 108 entity chunks, 0 poi chunks in world 'world' in 0,07s
-[18:33:24] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[18:33:24] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[18:33:24] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[18:33:24] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[18:33:24] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[18:33:24] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 23 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
-[18:33:24] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[18:33:24] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[18:33:24] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[18:33:24] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[18:33:24] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[18:33:24] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0,02s
-[18:33:24] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[18:33:24] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[18:33:24] [Server thread/INFO]: Flushing Chunk IO
-[18:33:24] [Server thread/INFO]: Closing Thread Pool
-[18:33:24] [Server thread/INFO]: Closing Server
+[08:01:11] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
+[08:01:11] [Server thread/INFO]: Default game type: SURVIVAL
+[08:01:11] [Server thread/INFO]: Generating keypair
+[08:01:11] [Server thread/INFO]: Starting Minecraft server on *:25565
+[08:01:11] [Server thread/INFO]: Using default channel type
+[08:01:11] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[08:01:11] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[08:01:11] [Server thread/INFO]: [KayitAsistani] Loading server plugin KayitAsistani v1.0
+[08:01:11] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[08:01:11] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[08:01:11] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[08:01:11] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[08:01:11] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[08:01:11] [Server thread/INFO]: Preparing level "world"
+[08:01:11] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[08:01:12] [Server thread/INFO]: Time elapsed: 239 ms
+[08:01:12] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[08:01:12] [Server thread/INFO]: Time elapsed: 26 ms
+[08:01:12] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[08:01:12] [Server thread/INFO]: Time elapsed: 28 ms
+[08:01:12] [Server thread/INFO]: [KayitAsistani] Enabling KayitAsistani v1.0
+[08:01:12] [Server thread/INFO]: [KayitAsistani] KayitAsistani baþlatýlýyor...
+[08:01:12] [Server thread/INFO]: [org.mongodb.driver.client] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.15+6"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='minecraft', source='minecraftdb', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@7306ce28, com.mongodb.Jep395RecordCodecProvider@350f9ac1, com.mongodb.KotlinCodecProvider@361e4230]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[94.154.34.158:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+[08:01:12] [Server thread/INFO]: [org.mongodb.driver.cluster] No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=94.154.34.158:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+[08:01:12] [cluster-ClusterId{value='6871ec18a23abb27dfec9285', description='null'}-94.154.34.158:27017/INFO]: [org.mongodb.driver.cluster] Monitor thread successfully connected to server with description ServerDescription{address=94.154.34.158:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=48617700}
+[08:01:12] [Server thread/INFO]: [KayitAsistani] MongoDB baðlantýsý baþarýlý!
+[08:01:12] [Server thread/INFO]: [KayitAsistani] KayitAsistani aktif!
+[08:01:12] [Server thread/INFO]: Running delayed init tasks
+[08:01:12] [Server thread/INFO]: Done (2.284s)! For help, type "help"
+[08:01:12] [Server thread/INFO]: Timings Reset
+[08:03:01] [User Authenticator #0/INFO]: UUID of player Korfez is f11fc57f-daea-3f75-9417-b1d89cd7624a
+[08:03:01] [Server thread/INFO]: Korfez joined the game
+[08:03:01] [Server thread/INFO]: Korfez[/192.168.1.2:64807] logged in with entity id 189 at ([world]309.4854426619026, 79.0, -212.76727171379716)
+[08:03:09] [Server thread/INFO]: Set the time to 1000
+[08:03:20] [Server thread/INFO]: Korfez issued server command: /giriþ omerR4141
+[08:03:20] [Craft Scheduler Thread - 5 - KayitAsistani/INFO]: [KayitAsistani] Korfez (f11fc57f-daea-3f75-9417-b1d89cd7624a) kullanýcýsý giriþ yaptý. IP: 192.168.1.2
+[08:03:33] [Server thread/INFO]: Korfez issued server command: /plugins
+[08:11:14] [Server thread/INFO]: Korfez issued server command: /profil
+[08:11:31] [Server thread/INFO]: Korfez issued server command: /giriþ omerR4141
+[08:11:32] [Craft Scheduler Thread - 7 - KayitAsistani/INFO]: [KayitAsistani] Korfez (f11fc57f-daea-3f75-9417-b1d89cd7624a) kullanýcýsý giriþ yaptý. IP: 192.168.1.2
+[08:11:35] [Server thread/INFO]: Korfez issued server command: /profil
+[08:34:06] [Server thread/INFO]: Stopping server
+[08:34:06] [Server thread/INFO]: [KayitAsistani] Disabling KayitAsistani v1.0
+[08:34:06] [Server thread/INFO]: [KayitAsistani] KayitAsistani devre dýþý býrakýldý.
+[08:34:06] [Server thread/INFO]: Saving players
+[08:34:06] [Server thread/INFO]: Korfez lost connection: Server closed
+[08:34:06] [Server thread/INFO]: Korfez left the game
+[08:34:06] [Server thread/INFO]: Saving worlds
+[08:34:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[08:34:06] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[08:34:06] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[08:34:06] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[08:34:06] [Server thread/INFO]: [ChunkHolderManager] Saved 12 block chunks, 104 entity chunks, 0 poi chunks in world 'world' in 0,04s
+[08:34:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[08:34:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[08:34:06] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[08:34:06] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[08:34:06] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[08:34:06] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 22 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
+[08:34:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[08:34:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[08:34:06] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[08:34:06] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[08:34:06] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[08:34:06] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0,01s
+[08:34:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[08:34:06] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[08:34:06] [Server thread/INFO]: Flushing Chunk IO
+[08:34:06] [Server thread/INFO]: Closing Thread Pool
+[08:34:06] [Server thread/INFO]: Closing Server

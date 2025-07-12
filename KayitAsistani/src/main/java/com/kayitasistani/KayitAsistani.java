@@ -40,6 +40,7 @@ public class KayitAsistani extends JavaPlugin implements Listener {
         this.getCommand("kayıt").setExecutor(new KayitKomutu(this, kullaniciRepository));
         this.getCommand("giriş").setExecutor(new GirisKomutu(this, kullaniciRepository, girisEngellemeSuresi, girisMaksDeneme));
         this.getCommand("şifremideğiştir").setExecutor(new SifremiDegistirKomutu(this, kullaniciRepository));
+        this.getCommand("şifresıfırla").setExecutor(new SifreSifirlaKomutu(this, kullaniciRepository));
         this.getCommand("profil").setExecutor(new ProfilKomutu(this, kullaniciRepository));
         getServer().getPluginManager().registerEvents(this, this);
         getLogger().info("KayitAsistani aktif!");

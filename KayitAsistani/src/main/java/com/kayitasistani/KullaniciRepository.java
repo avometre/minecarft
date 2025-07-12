@@ -2,6 +2,8 @@ package com.kayitasistani;
 
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.model.Filters;
+import com.mongodb.client.model.IndexOptions;
+import com.mongodb.client.model.Indexes;
 import org.bson.Document;
 import java.util.UUID;
 
@@ -10,6 +12,13 @@ public class KullaniciRepository {
 
     public KullaniciRepository(MongoDBManager mongoDBManager) {
         this.collection = mongoDBManager.getDatabase().getCollection("kullanicilar");
+        // uuid ve kullaniciAdi için unique index oluştur
+        try {
+            collection.createIndex(Indexes.ascending("uuid"), new IndexOptions().unique(true));
+            collection.createIndex(Indexes.ascending("kullaniciAdi"), new IndexOptions().unique(true));
+        } catch (Exception e) {
+            System.out.println("MongoDB index oluşturulurken hata: " + e.getMessage());
+        }
     }
 
     public boolean kullaniciVarMi(UUID uuid) {
